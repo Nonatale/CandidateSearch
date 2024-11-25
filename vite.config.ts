@@ -6,6 +6,7 @@ export default defineConfig({
   envDir: './environment',
   plugins: [react()],
   server: {
-    port: 5174,
+    port: process.env.PORT ? Number(process.env.PORT) : 5174,  // Ensure the port is a number
+    host: '0.0.0.0',  // Make sure Vite is listening on all interfaces
   },
 });
