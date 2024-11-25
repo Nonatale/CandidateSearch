@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: #000212;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -35,7 +39,7 @@ body {
   margin: 0;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 h1 {
@@ -78,7 +82,6 @@ button:focus-visible {
 main {
   color: #fff;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,4 +120,96 @@ tbody tr:nth-child(odd) {
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+.candidateRow {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.tableItem {
+  margin: 0 auto;
+  width: 11vw;
+  word-break: break-word; /* Breaks long words at any point */
+  overflow-wrap: break-word; /* Alternate property for compatibility */
+  white-space: normal; /* Ensures wrapping occurs */
+
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word; /* Prevents overflow for long text */
+
+  flex: 1;
+}
+
+.candidateImg {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.field-name {
+  margin-bottom: 20px;
+}
+
+.search-avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 30vw;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-content {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.next {
+  background-color: rgb(196, 59, 49);
+}
+
+.save {
+  background-color: rgb(54, 173, 62);
 }
